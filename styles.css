@@ -121,12 +121,12 @@
 @media (max-width:600px){
     /* .hero-section */
     .logo{
-        flex-direction: row;
+        
         font-weight: bold;
         font-size: 30px;
     }
     .nav-bar{
-        display: flex;
+        display: hidden;
         gap: 20px;
         justify-content: center;
         align-items: center;
@@ -135,6 +135,23 @@
         padding-top: 20px;
         padding-bottom: 10px;
         padding-left: 20px;
+        flex-direction: column;
+    }
+    .nav-menu li{
+        display: block;
+        padding-right: 50px;
+        font-size: 15px;
+    }
+    .nav-menu li a{
+        text-decoration: none;
+        color: black;
+        transition: .5s ease-in;
+    }
+    .nav-menu li a:hover{
+        color: brown;
+    }
+    .cart-icon{
+        font-size: 30px;
     }
     .hero-section{
         width: 100%;
