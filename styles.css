@@ -1,0 +1,222 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.nav-bar{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    top: 0;
+    z-index: 999;
+    position: sticky;
+}
+.logo{
+    flex-direction: row;
+    font-weight: bold;
+    font-size: 56px;
+}
+.nav-menu li{
+    display: inline-block;
+    padding-right: 50px;
+    font-size: 20px;
+}
+.nav-menu li a{
+    text-decoration: none;
+    color: black;
+    transition: .5s ease-in;
+}
+.nav-menu li a:hover{
+    color: brown;
+}
+.cart-icon{
+    font-size: 40px;
+}
+.hero-section{
+    width: 100%;
+    height: 88vh;
+    background-image: url('/assets/hero-imagge.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.description{
+    padding-top: 15%;
+    padding-left: 5%;
+    position: absolute;
+}
+.description>h1{
+    font-weight: bold;
+    font-size: 70px;
+    padding-bottom: 40px;
+}
+.description>p{
+    font-weight: lighter;
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+.hero-btn{
+    position: relative;
+    text-decoration: none;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 60px;
+    height: 50px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    transition: .5s ease-out;
+}
+.hero-btn:hover{
+    background-color: transparent;
+    color: black;
+}
+
+/* ----------------------------------services------------------*/
+.services{
+    height: 88vh;
+    width: 100%;
+    background-color: #EADBC8;
+}
+.services>h1{
+    font-size: 60px;
+    text-align: center;
+    padding-left: 55px;
+    padding-top: 70px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15%;
+    gap: 40px;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.bucket{
+    border: 3px solid black;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 450px;
+    height: 300px;
+}
+.bucket>i{
+    font-size: 40px;
+}
+.bucket>h1{
+    font-weight: bold;
+    font-size: 50px;
+}
+@media (max-width:600px){
+    /* .hero-section */
+    .logo{
+        flex-direction: row;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .nav-bar{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        background-color: aliceblue;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+    }
+    .hero-section{
+        width: 100%;
+        height: 100vh;
+        background-image: url('/assets/hero-imagge.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+    }
+    .hero-btn{
+        /* position: relative; */
+        
+        text-decoration: none;
+        border: 3px solid black;
+        border-radius: 10px;
+        width: 60px;
+        height: 50px;
+        padding: 20px;
+        background-color: black;
+        color: white;
+        font-size: 20px;
+        transition: .5s ease-out;
+    }
+    .description{
+        padding-top: 5%;
+        padding-left: 5%;
+        /* position: absolute; */
+    }
+    .description>h1{
+        font-weight: bold;
+        font-size: 50px;
+        padding-bottom: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .description>p{
+        display: none;
+        font-weight: lighter;
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    .services{
+        height: 100%;
+        width: 100%;
+        background-color: #EADBC8;
+    }
+    .services>h1{
+        font-size: 50px;
+        text-align: center;
+        padding-left: 55px;
+        padding-top: 70px;
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15%;
+        gap: 40px;
+        text-align: center;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 100px;
+    }
+    .bucket{
+        flex-direction: column;
+        border: 3px solid black;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 100px;
+        padding-right: 100px;
+        
+        width: 350px;
+        height: 250px;
+    }
+    .bucket>i{
+        font-size: 40px;
+    }
+    .bucket>h1{
+        font-weight: bold;
+        font-size: 30px;
+    }
+    
+}
