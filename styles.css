@@ -179,6 +179,7 @@
     .description{
         padding-top: 5%;
         padding-left: 5%;
+        padding-right: 5%;
         /* position: absolute; */
     }
     .description>h1{
