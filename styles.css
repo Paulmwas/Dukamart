@@ -27,7 +27,7 @@ nav{
          color: black;
  }
  nav a:hover{
-     background-color: #f0f0f0; 
+     color: #022e11; 
  }
  nav li:first-child{
      margin-right: auto;
